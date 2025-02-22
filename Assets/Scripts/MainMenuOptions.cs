@@ -2,13 +2,15 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
-public class MainMenuoptions {
+
+public class MainMenuOptions {
 
 
     void Start()
     {
-    
+        
     }
 
     public void PlayGame()

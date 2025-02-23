@@ -39,8 +39,6 @@ public class Counter : MonoBehaviour
         MainGameCanvas.SetActive(true);
     }
 
-   
-
     public void IncreaseCounter()
     {
         CurrentchipCount += chipsPerClickUpgrade;

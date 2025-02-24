@@ -5,18 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
-    //public GameObject T;
-    //public TriangleClick object1;
+    public void SettingsButton()
+    {
+        SceneManager.LoadSceneAsync("Settings");
+    }
 
-    //private void Start()
-    //{
-    //    object1 = T.GetComponent<TriangleClick>();
-    //}
-
-    //public void ResetCookies()
-    //{
-    //    object1.clickCount = 0;
-    //    Debug.Log("Chips inventory reset! Count: " + clickCount);
-
-    //}
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

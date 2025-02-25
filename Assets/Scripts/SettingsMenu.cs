@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SettingsMenu : MonoBehaviour
 {
-    public void SettingsButton()
-    {
-        SceneManager.LoadSceneAsync("Settings");
-    }
+   public void MainMenuButton()
+   {
+     SceneManager.LoadScene("MainMenu");
+   }
 
-    public void QuitGame()
+    public void SetCountertoZero()
     {
-        Application.Quit();
+      // resets counter to zero
+      TriangleClick triangleClick = FindFirstObjectByType<TriangleClick>();
+      triangleClick.clickCount = 0;
+      Debug.Log("Counter reset to zero");
     }
 }
